@@ -1,6 +1,6 @@
 #background-home{
     width:100%;
-    background-image: url('../images/alaska-2964658_1920.jpg');
+    background-image: url('../images/mt-fuji-477832_1920.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -9,6 +9,7 @@
 
 .image-home-hero{
     padding-top: 1%!important;
+    width: 25%;
 }
 
 .blockquote, .blockquote-footer{

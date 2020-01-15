@@ -10,7 +10,7 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#e3f2fd;" >
         <div class="container">
-            <a class="navbar-brand" href="index.php">Billet simple pour l'Alaska</a>
+            <a class="navbar-brand" href="index.php">Un graphiste au Japon</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,10 +22,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php?action=listPosts">Chapitres</a>
+                        <a class="nav-link" href="index.php?action=listPosts">Posts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">L'auteur</a>
+                        <a class="nav-link" href="#">Le graphiste</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>

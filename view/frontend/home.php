@@ -1,12 +1,12 @@
-<?php $titleSite = 'Billet simple pour l\'Alaska'; ?>
+<?php $titleSite = 'Graphiste au Japon'; ?>
 <?php ob_start(); ?>
 <div id="background-home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="my-4 display-3 title-white-shadow">BILLET SIMPLE POUR L'ALASKA</h1>
-                <h2 class="title-white-shadow">Le nouveau best seller de Jean Forteroche directement en ligne</h2 class="">
-                <img src="web/images/gilbert-garcin-photographe-sur-le-tard.jpg" class="img-fluid rounded mx-auto d-block image-home-hero" alt="portrait de Gilbert Garcin">
+                <h1 class="my-4 display-3 title-white-shadow">GRAPHISTE AU JAPON</h1>
+                <h2 class="title-white-shadow">Description d'un grand voyage</h2>
+                <img src="web/images/11043.jpg" class="img-fluid rounded mx-auto d-block image-home-hero" alt="stylo et dessin">
                 <blockquote class="blockquote">
                     <p class="mb-0">Il n'est jamais trop tard pour changer.</p>
                     <footer class="blockquote-footer">Gilbert Garcin dans <cite title="Source Title">Le plus grand des hommes</cite> l'oeuvre précédente de Jean Forteroche</footer>
