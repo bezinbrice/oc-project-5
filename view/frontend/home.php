@@ -43,7 +43,7 @@
             $lastPost->closeCursor();
             ?>
             <div>
-                <img src="web/images/les-amoureux-de-peros-guirec-gilbert-garcin.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
+                <img src="web/images/200115_0019.jpg" class="img-fluid rounded mx-auto d-block home--center--picture" alt="...">
             </div>
             <div class="card home--pitch-card">
                 <h5 class="card-header text-uppercase">Tout commence ici</h5>
