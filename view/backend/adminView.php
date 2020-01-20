@@ -22,9 +22,13 @@
                         <div class="input-group adminView--form--content updatePostView--form--content">
                             <textarea id="content" name="content"></textarea>
                         </div>
+                        <div class="input-group">
+                            <input type="text" id="pictureName" name="pictureName"" placeholder="Nom de l'image"/>
+                        </div>
                         <div class="input-group adminView--publish-btn">
                             <button type="submit" name="save" class="btn btn-lg btn-primary">Publier</button>
                         </div>
+
                     </form>
                 </div>
                     <div>
@@ -56,6 +60,7 @@ while ($data = $posts->fetch())
                 <div class="news">
                     <div class="card mb-4 xs-8 news">
                         <div class="card">
+                            <img src="uploads/<?= $data['picture'];?>" class="card-img-top" alt="<?= $data['picture'];?>">
                             <h5 class="card-header"><?= $data['title'] ?></h5>
                             <div class="card-body">
                                 <p class="card-text"><?= $data['sample'] ?></p><br>

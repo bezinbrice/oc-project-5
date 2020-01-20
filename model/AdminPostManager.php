@@ -6,11 +6,11 @@ require_once("model/Manager.php");
 
 class AdminPostManager extends Manager
 {
-    public function createPost($title, $content)
+    public function createPost($title, $content, $picture)
     {
         $db = $this->dbConnect();
-        $newPost = $db->prepare('INSERT INTO posts(title, content, creation_date) VALUES( :title, :content, NOW())');
-        $newPost->execute(array(':title'=>$title, ':content'=>$content));
+        $newPost = $db->prepare('INSERT INTO posts(title, content, picture, creation_date) VALUES( :title, :content, :picture, NOW())');
+        $newPost->execute(array(':title'=>$title, ':content'=>$content, ':picture'=>$picture));
         return $newPost->fetch();
     }
 

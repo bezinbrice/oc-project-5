@@ -25,10 +25,10 @@ function admin(){
     require('view/backend/adminView.php');
 }
 
-function createPost($title, $content){
+function createPost($title, $content, $picture){
     $adminPostManager = new \OpenClassrooms\oc_project_4\Model\AdminPostManager();
 
-    $newPost = $adminPostManager->createPost($title, $content);
+    $newPost = $adminPostManager->createPost($title, $content, $picture);
 
     if (!isset ($newPost)) {
         throw new Exception('Impossible d\'ajouter le nouveau post !');

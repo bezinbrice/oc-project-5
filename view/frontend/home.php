@@ -1,5 +1,6 @@
 <?php $titleSite = 'Graphiste au Japon'; ?>
 <?php ob_start(); ?>
+
 <div id="background-home">
     <div class="container">
         <div class="row">
@@ -19,6 +20,11 @@
     <div class="row">
         <div class="col-md-12">
             <h2 class="my-4 title-gray-shadow">Dernier chapitre paru</h2>
+            <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
+                Upload a File:
+                <input type="file" name="myfile" id="fileToUpload">
+                <input type="submit" name="submit" value="Upload File Now" >
+            </form>
             <?php
             while ($data = $lastPost->fetch())
             {

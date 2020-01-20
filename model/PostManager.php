@@ -26,7 +26,7 @@ class PostManager extends Manager
 
     public function getPostsSample(){
         $db = $this->dbConnect();
-        $req = $db->query('SELECT LEFT(content, 300) AS sample, id, title, content, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 0, 3');
+        $req = $db->query('SELECT LEFT(content, 300) AS sample, id, title, content, picture, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 0, 3');
 
         return $req;
     }
