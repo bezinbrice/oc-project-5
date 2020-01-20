@@ -28,16 +28,21 @@
                         <div class="input-group adminView--publish-btn">
                             <button type="submit" name="save" class="btn btn-lg btn-primary">Publier</button>
                         </div>
-
                     </form>
                 </div>
-                    <div>
-                        <?php if ($nbReport['nbreports'] > 0): ?>
-                        <a href="index.php?action=reports" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Commentaires Signalés <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a> <!-- Nous permet d'obtenir le nombre de commentaires signalés-->
-                        <?php else: ?>
-                        <a href="index.php?action=reports" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Aucune notification <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a>
-                        <?php endif ?>
-                    </div>
+                <div>
+                    <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
+                        <input type="file" name="myfile" id="fileToUpload">
+                        <input type="submit" name="submit" value="Charger une image" >
+                    </form>
+                </div>
+                <div>
+                    <?php if ($nbReport['nbreports'] > 0): ?>
+                    <a href="index.php?action=reports" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Commentaires Signalés <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a> <!-- Nous permet d'obtenir le nombre de commentaires signalés-->
+                    <?php else: ?>
+                    <a href="index.php?action=reports" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Aucune notification <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a>
+                    <?php endif ?>
+                </div>
             </div>
         </div>
     </div>
@@ -60,14 +65,14 @@ while ($data = $posts->fetch())
                 <div class="news">
                     <div class="card mb-4 xs-8 news">
                         <div class="card">
-                            <img src="uploads/<?= $data['picture'];?>" class="card-img-top" alt="<?= $data['picture'];?>">
+                            <img src="public/uploads/<?= $data['picture'];?>" class="card-img-top" alt="<?= $data['picture'];?>">
                             <h5 class="card-header"><?= $data['title'] ?></h5>
                             <div class="card-body">
                                 <p class="card-text"><?= $data['sample'] ?></p><br>
                                 <div class="d-flex justify-content-between flex-wrap">
                                     <a href="index.php?action=post&amp;id=<?= $data['id'] ?>" class="btn btn-primary d-flex mb-2">Lire le chapitre &rarr;</a>
                                     <a href="index.php?action=admin&amp;edit=<?= $data['id']; ?>"class="btn btn-outline-info d-flex mb-2">Modifier</a>
-                                    <em><a href="index.php?action=post&amp;id=<?= $data['id'] ?> #post-comment" class="btn btn-outline-secondary d-flex mb-2">Commentaires</a></em>
+                                    <em><a href="index.php?action=post&amp;id=<?= $data['id'] ?>#post-comment" class="btn btn-outline-secondary d-flex mb-2">Commentaires</a></em>
                                 </div>
                             </div>
                             <div class="card-footer text-muted">

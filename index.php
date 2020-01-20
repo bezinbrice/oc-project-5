@@ -2,6 +2,15 @@
 require('controller/frontend.php');
 require('controller/backend.php');
 session_start();
+$inactive = 3600;
+if(isset ($_SESSION['timeout'])){
+    $session_life = time() - $_SESSION['timeout'];
+    if($session_life > $inactive) {
+        unset ($_SESSION['admin']);
+        unset ($_SESSION['token']);
+    }
+}
+$_SESSION['timeout']=time();
 try {
     if (isset($_GET['action'])) {
         switch ($_GET['action']) {
@@ -43,46 +52,46 @@ try {
                 break;
 
             case('report'):
-                    report($_GET['comment_id'], $_GET['post_id']);
-                    if(isset($_SESSION['admin']) && isset($_POST['deleteComment'])){
-                        deleteComment($_GET['comment_id']);
-                    } elseif(isset($_SESSION['admin']) && isset($_POST['cancelReport'])){
-                        cancelReport($_GET['comment_id']);
-                    } elseif(isset($_SESSION['admin']) && isset($_POST['moderateComment'])){
-                        moderateComment($_GET['comment_id']);
-                    }
+                report($_GET['comment_id'], $_GET['post_id']);
+                if(isset($_SESSION['admin']) && isset($_POST['deleteComment']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])){
+                    deleteComment($_GET['comment_id']);
+                } elseif(isset($_SESSION['admin']) && isset($_POST['cancelReport']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])){
+                    cancelReport($_GET['comment_id']);
+                } elseif(isset($_SESSION['admin']) && isset($_POST['moderateComment']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])){
+                    moderateComment($_GET['comment_id']);
+                }
                 break;
 
             case('admin'):
-                    if(!isset($_SESSION['admin'])) {
-                        isAdmin();
-                    } elseif(isset($_SESSION['admin'])){
-                            if(!isset($_GET['edit'])){
-                                admin();
-                                if(isset($_POST['save'])) {
-                                    if (!empty($_POST['title']) && !empty($_POST['content']) &&!empty($_POST['pictureName'])) {
-                                        createPost($_POST['title'], $_POST['content'], $_POST['pictureName']);
-                                    } else {
-                                        throw new Exception('Tous les champs ne sont pas remplis !');
-                                    }
-                                }
-                            } elseif (isset($_GET['edit'])){
-                                getPostToUpdate($_GET['edit']);
-                                if (isset($_POST['update'])) {
-                                    if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                                        updatePost($_GET['edit'],$_POST['title'], $_POST['content']);
-                                    }
-                                    else {
-                                        throw new Exception('Tous les champs ne sont pas remplis !');
-                                    }
-                                }  elseif (isset($_POST['delete'])){
-                                    deletePost($_GET['edit']);
-                                    throw new Exception('Tous les champs ne sont pas remplis !');
-                                }
+                if(!isset($_SESSION['admin'])) {
+                    isAdmin();
+                } elseif(isset($_SESSION['admin'])){
+                    if(!isset($_GET['edit'])){
+                        admin();
+                        if(isset($_POST['save'])) {
+                            if (!empty($_POST['title']) && !empty($_POST['content']) &&!empty($_POST['pictureName'])) {
+                                createPost($_POST['title'], $_POST['content'], $_POST['pictureName']);
+                            } else {
+                                throw new Exception('Tous les champs ne sont pas remplis !');
                             }
-                        } else {
-                        throw new Exception('Espace réservé à l\'administrateur');
+                        }
+                    } elseif (isset($_GET['edit'])){
+                        getPostToUpdate($_GET['edit']);
+                        if (isset($_POST['update']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])) {
+                            if (!empty($_POST['title']) && !empty($_POST['content'])) {
+                                updatePost($_GET['edit'],$_POST['title'], $_POST['content']);
+                            }
+                            else {
+                                throw new Exception('Tous les champs ne sont pas remplis !');
+                            }
+                        }  elseif (isset($_POST['delete']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])){
+                            deletePost($_GET['edit']);
+                            throw new Exception('Tous les champs ne sont pas remplis !');
+                        }
                     }
+                } else {
+                    throw new Exception('Espace réservé à l\'administrateur');
+                }
                 break;
             case('reports'):
                 if(isset($_SESSION['admin'])){
@@ -93,54 +102,25 @@ try {
                 }
                 break;
 
-            case('fileUpload'):
-                $currentDir = getcwd();
-                $uploadDirectory = "/uploads/";
+            case('authorView'):
+                authorPage();
+                break;
 
-                $errors = []; // Store all foreseen and unforseen errors here
-
-                $fileExtensions = ['jpeg','jpg','png']; // Get all the file extensions
-
-                $fileName = $_FILES['myfile']['name'];
-                $fileSize = $_FILES['myfile']['size'];
-                $fileTmpName  = $_FILES['myfile']['tmp_name'];
-                $fileType = $_FILES['myfile']['type'];
-                $explodeFile = explode('.',$fileName);
-                $fileExtension = strtolower(end($explodeFile));
-
-                $uploadPath = $currentDir . $uploadDirectory . basename($fileName);
-
-                echo $uploadPath;
-
-                if (isset($_POST['submit'])) {
-
-                    if (! in_array($fileExtension,$fileExtensions)) {
-                        $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
-                    }
-
-                    if ($fileSize > 20000000) {
-                        $errors[] = "This file is more than 2MB. Sorry, it has to be less than or equal to 2MB";
-                    }
-
-                    if (empty($errors)) {
-                        $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
-
-                        if ($didUpload) {
-                            echo "The file " . basename($fileName) . " has been uploaded";
-                        } else {
-                            echo "An error occurred somewhere. Try again or contact the admin";
-                        }
-                    } else {
-                        foreach ($errors as $error) {
-                            echo $error . "These are the errors" . "\n";
-                        }
-                    }
+            case('contactView'):
+                contactPage();
+                if(isset($_POST['submit'])){
+                    contactEmail($_POST['email'],$_POST['name'],$_POST['mesSubject'], $_POST['contentMessage']);
                 }
+                break;
 
+            case('fileUpload'):
+                uploadImages();
+                break;
         }
     }
     elseif(isset($_GET['logout'])){
         unset ($_SESSION['admin']);
+        unset ($_SESSION['token']);
         home();
     }
     else {

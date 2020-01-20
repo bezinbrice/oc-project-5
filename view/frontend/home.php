@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="my-4 display-3 title-white-shadow">GRAPHISTE AU JAPON</h1>
-                <h2 class="title-white-shadow">Description d'un grand voyage</h2>
+                <h2 class="title-white-shadow">Récit d'un humble voyage</h2>
                 <img src="web/images/11043.jpg" class="img-fluid rounded mx-auto d-block image-home-hero" alt="stylo et dessin">
                 <blockquote class="blockquote">
                     <p class="mb-0">Il n'est jamais trop tard pour changer.</p>
@@ -20,11 +20,6 @@
     <div class="row">
         <div class="col-md-12">
             <h2 class="my-4 title-gray-shadow">Dernier chapitre paru</h2>
-            <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
-                Upload a File:
-                <input type="file" name="myfile" id="fileToUpload">
-                <input type="submit" name="submit" value="Upload File Now" >
-            </form>
             <?php
             while ($data = $lastPost->fetch())
             {
