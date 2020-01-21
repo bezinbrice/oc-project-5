@@ -8,9 +8,9 @@
                 <a href="index.php?action=listPosts" class="btn btn-outline-secondary postView--link-return--btn">Retour à la liste des billets</a>
             </div>
             <div class="news">
-                <img src="uploads/<?= $post['picture'] ?>" class="img-fluid" alt="<?= $post['picture'] ?>">
                 <h1 class="display-4"><?= $post['title'] ?></h1>
                 <h5><em>le <?= $post['creation_date_fr'] ?></em></h5>
+                <img src="public/uploads/<?= $post['picture'];?>" class="card-img-top postsView--img-chapter" alt="<?= $post['picture'];?>">
                 <p>
                     <?= nl2br($post['content'])?>
                 </p>

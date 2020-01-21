@@ -24,6 +24,7 @@
             <div class="card mb-4 news">
                 <div class="card">
                     <h5 class="card-header"><?= $data['title'] ?></h5>
+                    <img src="public/uploads/<?= $data['picture'];?>" class="card-img-top listPostsView--img-chapter" alt="<?= $data['picture'];?>">
                     <div class="card-body">
                         <p class="card-text"><?= $data['content'] ?></p>
                         <div  class="d-flex justify-content-between flex-wrap">

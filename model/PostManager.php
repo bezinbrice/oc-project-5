@@ -9,7 +9,7 @@ class PostManager extends Manager
     public function getLastPost()
     {
         $db = $this->dbConnect();
-        $req = $db->query('SELECT id, title, LEFT(content, 300) AS sample, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 1');
+        $req = $db->query('SELECT id, title, LEFT(content, 300) AS sample, picture, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT 1');
 
         return $req;
     }
@@ -41,7 +41,7 @@ class PostManager extends Manager
 
     public function getPosts($firstPost, $nb_posts_page){
         $db = $this->dbConnect();
-        $req=$db->prepare(sprintf("SELECT id, title, LEFT(content, 300) AS content, DATE_FORMAT(creation_date, '%%d/%%m/%%Y à %%Hh/%%imin/%%ss') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT %d,%d", $firstPost, $nb_posts_page));
+        $req=$db->prepare(sprintf("SELECT id, title, LEFT(content, 300) AS content, picture, DATE_FORMAT(creation_date, '%%d/%%m/%%Y à %%Hh/%%imin/%%ss') AS creation_date_fr FROM posts ORDER BY creation_date DESC LIMIT %d,%d", $firstPost, $nb_posts_page));
         $req->execute();
 
         return $req;

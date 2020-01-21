@@ -28,51 +28,52 @@ function admin(){
 }
 
 function uploadImages(){
-    $currentDir = getcwd();
-    $uploadDirectory = "/public/uploads/";
 
-    $errors = []; // Store all foreseen and unforseen errors here
-
-    $fileExtensions = ['jpeg','jpg','png']; // Get all the file extensions
-
-    $fileName = $_FILES['myfile']['name'];
-    $fileSize = $_FILES['myfile']['size'];
-    $fileTmpName  = $_FILES['myfile']['tmp_name'];
-    $fileType = $_FILES['myfile']['type'];
-    $explodeFile = explode('.',$fileName);
-    $fileExtension = strtolower(end($explodeFile));
-
-    $uploadPath = $currentDir . $uploadDirectory . basename($fileName);
-
-    echo $uploadPath;
 
     if (isset($_POST['submit'])) {
+        $countfiles = count($_FILES['myfile']['name']);
+        for($i=0;$i<$countfiles;$i++){
 
-        if (! in_array($fileExtension,$fileExtensions)) {
-            $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
-        }
+            $currentDir = getcwd();
+            $uploadDirectory = "/public/uploads/";
+            $errors = []; // Store all foreseen and unforseen errors here
 
-        if ($fileSize > 20000000) {
-            $errors[] = "This file is more than 20MB. Sorry, it has to be less than or equal to 20MB";
-        }
+            $fileExtensions = ['jpeg','jpg','png']; // Get all the file extensions
 
-        if (empty($errors)) {
-            $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
+            $fileName = $_FILES['myfile']['name'][$i];
+            $fileSize = $_FILES['myfile']['size'][$i];
+            $fileTmpName  = $_FILES['myfile']['tmp_name'];
+            $fileType = $_FILES['myfile']['type'];
+            $explodeFile = explode('.',$fileName);
+            $fileExtension = strtolower(end($explodeFile));
 
-            if ($didUpload) {
-                $_SESSION['msg'] = "L'image " . basename($fileName) . " a été importée avec succès !";
-                echo '<script language="Javascript">
-                 document.location.replace("index.php?action=admin");
-     </script>';
+            $uploadPath = $currentDir . $uploadDirectory . basename($fileName);
+
+
+            if (! in_array($fileExtension,$fileExtensions)) {
+                $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
+            }
+            if ($fileSize > 20000000) {
+                $errors[] = "This file is more than 20MB. Sorry, it has to be less than or equal to 20MB";
+            }
+            if (empty($errors)) {
+                $didUpload = move_uploaded_file($fileTmpName[$i], $uploadPath);
+
+                if ($didUpload) {
+                    $_SESSION['msg'] = "L'image " . basename($fileName) . " a été importée avec succès !";
+                    echo '<script language="Javascript">document.location.replace("index.php?action=admin");</script>';
+                } else {
+                    echo "An error occurred somewhere. Try again or contact the admin";
+                }
             } else {
-                echo "An error occurred somewhere. Try again or contact the admin";
+                foreach ($errors as $error) {
+                    echo $error . "These are the errors" . "\n";
+                }
             }
-        } else {
-            foreach ($errors as $error) {
-                echo $error . "These are the errors" . "\n";
-            }
+
         }
     }
+
 }
 
 function createPost($title, $content, $picture){

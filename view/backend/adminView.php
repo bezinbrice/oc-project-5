@@ -32,7 +32,7 @@
                 </div>
                 <div>
                     <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
-                        <input type="file" name="myfile" id="fileToUpload">
+                        <input type="file" name="myfile[]" id="fileToUpload" multiple="multiple">
                         <input type="submit" name="submit" value="Charger une image" >
                     </form>
                 </div>

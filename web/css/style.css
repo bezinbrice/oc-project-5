@@ -178,6 +178,11 @@ a
 
 }
 
+.listPostsView--img-chapter{
+    width: 50%;
+    margin:auto;
+}
+
                 /*POST VIEW PAGE */
 .postView--link-return--btn{
     margin: 1%;
@@ -191,10 +196,16 @@ a
     margin-bottom: 3%!important;
 }
 
-                /* LIST POSTS VIEW PAGE */
+.postsView--img-chapter{
+    width: 75%;
+    margin:auto;
+}
+
+                /* ERROR VIEW PAGE */
 .errorView--banner {
-    background-image: url('../images/chap-img-4.jpg');
-    background-position: 50% 58%;
+    background-image: url('../images/singe_surpris.JPG');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
