@@ -4,9 +4,11 @@
     src:url('assets/fonts/Roboto-Regular.ttf');
 }
 
+            /*HOME PAGE*/
+
 #background-home{
     width:100%;
-    background-image: url('../images/mt-fuji-477832_1920.jpg');
+    background-image: url('../images/IMG_6492.JPG');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -70,14 +72,13 @@ a
 
                 /* ADMIN PAGE */
 .admin-hero{
-    background-image: url('../images/chap-img-1.jpg');
-    background-position: right;
+    background-image: url('../images/banniere1.jpg');
     background-repeat: no-repeat;
     margin-bottom: 2.5%;
 }
 
 .home--h2{
-    font-family:'Roboto-Regular';
+    font-family: 'Roboto-Regular';
 }
 
 .admin-hero--container{
@@ -162,13 +163,12 @@ a
 
                 /* LIST POSTS VIEW PAGE */
 .banner-listPostsView{
-    background-image: url('../images/hero-chapters.jpg');
-    background-position: 50% 65%;
+    background-image: url('../images/banniere2.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .banner-listPostsView--text{
-    text-align:right;
     color: black;
     text-shadow: 2px 2px #d5d5d5;
 }

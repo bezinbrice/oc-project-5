@@ -4,8 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <h1 class="my-4 banner-listPostsView--text">TOUS LES CHAPITRES DEJA PARUS</h1>
-            <h2 class="my-4 banner-listPostsView--text">BILLET SIMPLE POUR L'ALASKA</h2>
+            <h1 class="my-4 banner-listPostsView--text">TOUS LES POSTS</h1>
+            <h2 class="my-4 banner-listPostsView--text">VOYAGE AU JAPON</h2>
             <blockquote class="blockquote banner-listPostsView--text banner-listPostsView--blockquote">
                 <p class="mb-0">Quand il a fallu se battre, les gens ont préféré faire ceux qui n'avaient pas compris.</p>
                 <footer class="blockquote-footer banner-listPostsView--text banner-listPostsView--blockquote">Marc Boulland dans <cite title="Source Title">Notre responsabilité</cite> un ouvrage de Jean Forteroche</footer>

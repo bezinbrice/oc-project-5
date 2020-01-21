@@ -1,6 +1,5 @@
 <?php $titleSite = 'Graphiste au Japon'; ?>
 <?php ob_start(); ?>
-
 <div id="background-home">
     <div class="container">
         <div class="row">
