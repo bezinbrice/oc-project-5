@@ -63,6 +63,9 @@ function report($commentId, $postId)
 
 function galleryPage()
 {
+    $postManager = new \OpenClassrooms\oc_project_4\Model\PostManager();
+
+    $pictures = $postManager->getPictures();
     require('view/frontend/galleryView.php');
 }
 

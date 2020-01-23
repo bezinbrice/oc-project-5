@@ -1,4 +1,4 @@
-<?php $titleSite = 'Billet simple pour l\'alaska'; ?>
+<?php $titleSite = 'Graphiste au Japon'; ?>
 
 <?php ob_start(); ?>
 <div class="errorView--banner jumbotron">

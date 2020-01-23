@@ -50,7 +50,7 @@
                 <h5 class="card-header text-uppercase">JE VAIS PARTIR UN AN AU JAPON</h5>
                 <div class="card-body">
                     <h5 class="card-title">"Pourquoi ?"</h5>
-                    <p class="card-text text-justify">Après deux années de recherche d'emploi, l'homme que j'étais avait perdu complètement espoir de pouvoir s'intégrer dans la société en tant que graphiste. Je me suis alors demandé "qu'est ce que j'aimerai qu'un voyant me dise ? " C'est alors que je me suis imaginé partir à l'étranger, à l'autre bout du monde tout en souriant puis j'ai ouvert les yeux et mon choix été fait. </p>
+                    <p class="card-text text-justify">Après deux années de recherche d'emploi, l'homme que j'étais avait perdu complètement espoir de pouvoir s'intégrer dans la société en tant que graphiste. Je me suis alors demandé "Qu'est ce que j'aimerai qu'un voyant me dise ? " C'est alors que je me suis imaginé partir à l'étranger, à l'autre bout du monde tout en souriant puis j'ai ouvert les yeux et mon choix était fait. </p>
                     <a href="index.php?action=listPosts" class="btn btn-primary">Visiter la page des posts</a>
                 </div>
             </div>

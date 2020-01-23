@@ -46,4 +46,12 @@ class PostManager extends Manager
 
         return $req;
     }
+
+    public function getPictures(){
+        $db = $this->dbConnect();
+        $req=$db->prepare('SELECT id, title, picture, DATE_FORMAT(creation_date, \'%d/%m/%Y à %Hh%imin%ss\') AS creation_date_fr FROM posts ORDER BY creation_date DESC');
+        $req->execute();
+
+        return $req;
+    }
 }

@@ -218,6 +218,11 @@ a
     color:black;
 }
 
+                /* GALLERY VIEW PAGE */
+.galleryView--container--pictures{
+    width: 30%!important;
+}
+
 
                 /*AUTHOR PAGE*/
 .banner-authorView{

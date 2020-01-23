@@ -1,4 +1,4 @@
-<?php $titleSite = 'Billet pour l\'Alaska - Chapitres'; ?>
+<?php $titleSite = 'Graphiste au Japon - Posts'; ?>
 <?php ob_start(); ?>
 <div class="banner-listPostsView jumbotron">
     <div class="container">
