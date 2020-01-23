@@ -7,7 +7,7 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h2>BILLET SIMPLE POUR L'ALASKA</h2>
+                        <h2>GRAPHISTE AU JAPON</h2>
                         <h1 class="display-4">Une erreur est survenue !</h1>
                         <div class="errorView--text">
                             <p>Nous sommes désolés, il semble qu'une erreur se soit produite.</p>

@@ -4,12 +4,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="my-4 display-3 title-white-shadow">GRAPHISTE AU JAPON</h1>
-                <h2 class="title-white-shadow">Récit d'un humble voyage</h2>
+                <h1 class="my-4 display-3 home-banner--titles title-white-shadow">GRAPHISTE AU JAPON</h1>
+                <h2 class="home-banner--titles home--h2 title-white-shadow">Récit d'un humble voyage</h2>
                 <img src="web/images/11043.jpg" class="img-fluid rounded mx-auto d-block image-home-hero" alt="stylo et dessin">
                 <blockquote class="blockquote">
-                    <p class="mb-0">Il n'est jamais trop tard pour changer.</p>
-                    <footer class="blockquote-footer">Gilbert Garcin dans <cite title="Source Title">Le plus grand des hommes</cite> l'oeuvre précédente de Jean Forteroche</footer>
+                    <p class="mb-0">L'homme ne peut découvrir de nouveaux océans sans avoir le courage de perdre de vue le rivage</p>
+                    <footer class="blockquote-footer">Citation d'<cite title="Source Title">André Gide</cite>, écrivain français </footer>
                 </blockquote>
             </div>
         </div>
@@ -18,7 +18,7 @@
 <div class="container home-page">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="my-4 title-gray-shadow">Dernier chapitre paru</h2>
+            <h2 class="my-4 title-gray-shadow">Dernière publication</h2>
             <?php
             while ($data = $lastPost->fetch())
             {
@@ -47,11 +47,11 @@
                 <img src="web/images/200115_0019.jpg" class="img-fluid rounded mx-auto d-block home--center--picture" alt="...">
             </div>
             <div class="card home--pitch-card">
-                <h5 class="card-header text-uppercase">Tout commence ici</h5>
+                <h5 class="card-header text-uppercase">JE VAIS PARTIR UN AN AU JAPON</h5>
                 <div class="card-body">
-                    <h5 class="card-title">Gérard voulait voir la neige une dernière fois.</h5>
-                    <p class="card-text text-justify">Gérard est un vieil homme usé par le temps. Chaque jour est constitué de moment près de son jardin, de son ami Pierre de l'autre côté de la rue et enfin des infos à la télévision. Lorsque Pierre décède, Gérard s'ennuie et n'entend aux infos que des nouvelles bien tristes sur le monde autour de lui. Il décide alors d'effectuer un dernier voyage, loin de chez lui. Pour avoir l'occasion de voir une dernière fois de la neige avant que celle-ci ne disparaisse pour toujours.</p>
-                    <a href="index.php?action=listPosts" class="btn btn-primary">Visiter la page des chapitres</a>
+                    <h5 class="card-title">"Pourquoi ?"</h5>
+                    <p class="card-text text-justify">Après deux années de recherche d'emploi, l'homme que j'étais avait perdu complètement espoir de pouvoir s'intégrer dans la société en tant que graphiste. Je me suis alors demandé "qu'est ce que j'aimerai qu'un voyant me dise ? " C'est alors que je me suis imaginé partir à l'étranger, à l'autre bout du monde tout en souriant puis j'ai ouvert les yeux et mon choix été fait. </p>
+                    <a href="index.php?action=listPosts" class="btn btn-primary">Visiter la page des posts</a>
                 </div>
             </div>
         </div>

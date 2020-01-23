@@ -61,6 +61,11 @@ function report($commentId, $postId)
     header('Location: index.php?action=post&id=' . $postId);
 }
 
+function galleryPage()
+{
+    require('view/frontend/galleryView.php');
+}
+
 function authorPage()
 {
     require('view/frontend/authorView.php');

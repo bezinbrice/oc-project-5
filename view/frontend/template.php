@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Le nouveau roman de Jean Forteroche à retrouver entièrement en ligne.">
+    <meta name="description" content="Un humble voyage d'une année au Japon raconté par mes soins.">
     <title><?= $titleSite ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="web/css/style.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#e3f2fd;" >
     <div class="container">
-        <a class="navbar-brand" href="index.php">Billet simple pour l'Alaska</a>
+        <a class="navbar-brand" href="index.php">Graphiste au Japon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,7 +56,10 @@
                     <a class="nav-link" href="index.php?action=listPosts">Chapitres</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=authorView">L'auteur</a>
+                    <a class="nav-link" href="index.php?action=gallery">Galerie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?action=authorView">Le voyageur</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=contactView">Contact</a>
@@ -77,7 +80,7 @@
                     <input type="submit" value="Admin" />
                 </p>
             </form>
-            <p class="m-0 text-center text-black">Copyright &copy; Billet pour l'Alaska, Jean Forteroche 2019</p>
+            <p class="m-0 text-center text-black">Copyright &copy; Graphiste au Japon, Brice Bézin 2020</p>
         </div>
     </div>
 </footer>

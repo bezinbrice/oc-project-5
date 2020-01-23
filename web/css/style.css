@@ -8,7 +8,7 @@
 
 #background-home{
     width:100%;
-    background-image: url('../images/IMG_6492.JPG');
+    background-image: url('../images/IMG_9096.JPG');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -17,7 +17,12 @@
 
 .image-home-hero{
     padding-top: 1%!important;
+    margin-left: 25%!important;
     width: 25%;
+}
+
+.home-banner--titles{
+    margin-right: 25%!important;
 }
 
 .blockquote, .blockquote-footer{
@@ -78,7 +83,7 @@ a
 }
 
 .home--h2{
-    font-family: 'Roboto-Regular';
+    font-family:"Roboto-Regular";
 }
 
 .admin-hero--container{

@@ -102,6 +102,10 @@ try {
                 }
                 break;
 
+            case('gallery'):
+                galleryPage();
+                break;
+
             case('authorView'):
                 authorPage();
                 break;
@@ -115,6 +119,10 @@ try {
 
             case('fileUpload'):
                 uploadImages();
+                break;
+
+            default:
+                home();
                 break;
         }
     }
