@@ -15,6 +15,9 @@
                         <div class="input-group updatePostView--form--content">
                             <textarea id="content" name="content" class="updatePostView--form--content"><?= nl2br(htmlspecialchars($postUpdate['content'])); ?></textarea>
                         </div>
+                        <div class="input-group">
+                            <input type="text" id="pictureName" name="pictureName" value="<?= htmlspecialchars($postUpdate['picture']); ?>"placeholder="Nom de l'image"/>
+                        </div>
                         <div class="input-group updatePostView--form--btns">
                             <button type="submit" name="update" class="btn btn-warning updatePostView--form--btns--edit" onclick="return confirm('Êtes-vous sûr de vouloir modifier le chapitre?')">Éditer</button>
                             <button type="submit" name="delete" class="btn btn-danger updatePostView--form--btns--delete" onclick="return confirm('Êtes-vous sûr de vouloir effacer le chapitre?')">Supprimer</button>

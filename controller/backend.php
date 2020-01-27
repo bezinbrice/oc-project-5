@@ -100,9 +100,9 @@ function getPostToUpdate($id){
 }
 
 
-function updatePost($id, $title, $content){
+function updatePost($id, $title, $content, $picture){
     $adminPostManager = new \OpenClassrooms\oc_project_4\Model\AdminPostManager();
-    $update = $adminPostManager->updatePost($id, $title, $content);
+    $update = $adminPostManager->updatePost($id, $title, $content, $picture);
 
     if (!isset ($update)) {
         throw new Exception('Impossible de modifier le post !');

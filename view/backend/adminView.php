@@ -1,6 +1,6 @@
 <?php $titleSite = 'Page Admin'; ?>
 <?php ob_start(); ?>
-<div class="admin-hero">
+<div class="admin-hero jumbotron">
     <div class="container admin-hero--container">
         <div class="row">
             <div class="col-md-12">
@@ -23,25 +23,32 @@
                             <textarea id="content" name="content"></textarea>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="pictureName" name="pictureName"" placeholder="Nom de l'image"/>
+                            <input type="text" id="pictureName" name="pictureName" placeholder="Nom de l'image"/>
                         </div>
-                        <div class="input-group adminView--publish-btn">
-                            <button type="submit" name="save" class="btn btn-lg btn-primary">Publier</button>
+                        <div class="d-flex justify-content-between adminView--btns">
+                            <div class="adminView--publish-btn">
+                                <button type="submit" name="save" class="btn btn-lg btn-primary">Publier</button>
+                            </div>
+                            <div>
+                                <?php if ($nbReport['nbreports'] > 0): ?>
+                                    <a href="index.php?action=reports" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Commentaires Signalés <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a> <!-- Nous permet d'obtenir le nombre de commentaires signalés-->
+                                <?php else: ?>
+                                    <a href="index.php?action=reports" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Aucune notification <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a>
+                                <?php endif ?>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div>
-                    <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
-                        <input type="file" name="myfile[]" id="fileToUpload" multiple="multiple">
-                        <input type="submit" name="submit" value="Charger une image" >
-                    </form>
-                </div>
-                <div>
-                    <?php if ($nbReport['nbreports'] > 0): ?>
-                    <a href="index.php?action=reports" class="btn btn-info btn-lg active" role="button" aria-pressed="true">Commentaires Signalés <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a> <!-- Nous permet d'obtenir le nombre de commentaires signalés-->
-                    <?php else: ?>
-                    <a href="index.php?action=reports" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Aucune notification <span class="badge badge-light"><?=$nbReport['nbreports']?></span></a>
-                    <?php endif ?>
+                    <div >
+                        <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
+                            <div class="custom-file d-flex justify-content-start">
+                                <input type="file" name="myfile[]" class="custom-file-input adminView-form--select-images" id="customFileLang" lang="fr" multiple="multiple">
+                                <label class="custom-file-label adminView-form--select-images" for="customFileLang" data-browse="Explorer">Choisir une image</label>
+                                <input type="submit" class="btn btn-dark" name="submit" value="Charger une image" >
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,6 +103,12 @@ $posts->closeCursor();
         </div>
     </div>
 </div>
+
+<!-- To get the form's visual to add images -->
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script>bsCustomFileInput.init()</script>
+
 <?php $content = ob_get_clean(); ?>
 <?php ob_end_flush(); ?>
 

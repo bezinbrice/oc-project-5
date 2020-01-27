@@ -22,10 +22,10 @@ class AdminPostManager extends Manager
         return $update->fetch();
     }
 
-    public function updatePost($id, $title, $content){
+    public function updatePost($id, $title, $content, $picture){
         $db = $this->dbConnect();
-        $update = $db->prepare("UPDATE posts SET title= :title, content=:content WHERE id=:id" );
-        $update->execute(array(':id'=>$id, ':title'=>$title, ':content'=>$content));
+        $update = $db->prepare("UPDATE posts SET title= :title, content=:content, picture=:picture WHERE id=:id" );
+        $update->execute(array(':id'=>$id, ':title'=>$title, ':content'=>$content, ':picture'=>$picture));
 
         return $update->fetch();
     }

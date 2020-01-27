@@ -69,7 +69,7 @@ try {
                     if(!isset($_GET['edit'])){
                         admin();
                         if(isset($_POST['save'])) {
-                            if (!empty($_POST['title']) && !empty($_POST['content']) &&!empty($_POST['pictureName'])) {
+                            if (!empty($_POST['title']) && !empty($_POST['content']) && !empty($_POST['pictureName'])) {
                                 createPost($_POST['title'], $_POST['content'], $_POST['pictureName']);
                             } else {
                                 throw new Exception('Tous les champs ne sont pas remplis !');
@@ -78,8 +78,8 @@ try {
                     } elseif (isset($_GET['edit'])){
                         getPostToUpdate($_GET['edit']);
                         if (isset($_POST['update']) && isset($_GET['token']) && ($_GET['token'] == $_SESSION['token'])) {
-                            if (!empty($_POST['title']) && !empty($_POST['content'])) {
-                                updatePost($_GET['edit'],$_POST['title'], $_POST['content']);
+                            if (!empty($_POST['title']) && !empty($_POST['content']) && !empty($_POST['pictureName'])) {
+                                updatePost($_GET['edit'],$_POST['title'], $_POST['content'], $_POST['pictureName']);
                             }
                             else {
                                 throw new Exception('Tous les champs ne sont pas remplis !');

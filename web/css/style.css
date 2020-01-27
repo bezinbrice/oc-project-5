@@ -77,8 +77,9 @@ a
 
                 /* ADMIN PAGE */
 .admin-hero{
-    background-image: url('../images/banniere1.jpg');
+    background-image: url('../images/mt-fuji-477832_1920.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 2.5%;
 }
 
@@ -110,8 +111,13 @@ a
     text-align: center;
 }
 
-.adminView--publish-btn{
-    margin-top:1%!important;
+.adminView-form--select-images{
+    width:35%!important;
+    margin-right: 3%;
+}
+
+.adminView--btns{
+    margin:1.5% 0!important;
 }
 
 .admin--old-chapter{
@@ -147,13 +153,15 @@ a
 }
 
 .updatePostView--banner{
-    background-image: url('../images/updateview.jpg');
+    background-image: url('../images/background_update.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 50% 60%;
 }
 
 .updatePostView--title{
-    color: white;
+    color: black;
+    text-shadow: 1px 1px #d5d5d5;
 }
 
                 /* TINY MCE */
@@ -330,7 +338,7 @@ a
 
                 /*AUTHOR PAGE*/
 .banner-authorView{
-    background-image: url('../images/knowledge-1052011_1920.jpg');
+    background-image: url('../images/banniere1.jpg');
     background-position: 50% 65%;
     background-repeat: no-repeat;
 }
@@ -360,9 +368,10 @@ a
 
                 /*CONTACT PAGE*/
 .banner-contactView{
-    background-image: url('../images/lamp-2903830_1920.jpg');
-    background-position: 50% 70%;
+    background-image: url('../images/banniere3.jpg');
+    background-position: 50% 75%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
                 /*RESPONSIVE*/
