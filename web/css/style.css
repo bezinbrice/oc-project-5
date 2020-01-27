@@ -8,7 +8,7 @@
 
 #background-home{
     width:100%;
-    background-image: url('../images/IMG_9096.JPG');
+    background-image: url('../images/home_banner.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -208,7 +208,7 @@ a
 
                 /* ERROR VIEW PAGE */
 .errorView--banner {
-    background-image: url('../images/singe_surpris.JPG');
+    background-image: url('../images/singe_surpris.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -219,10 +219,114 @@ a
 }
 
                 /* GALLERY VIEW PAGE */
+.banner-galleryView{
+    background-image: url('../images/banner_gallery.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0;
+    margin:0;
+}
+
+#galleryView-section{
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#slider-container{
+    display: flex;
+    width: 400%;
+    transition: ease 2s;
+    z-index: 1000;
+}
+
+.slider-container--block{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    position: relative;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.slider-container--block--texts{
+    position: absolute;
+    top:0;
+    left:10%;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: rgb(228, 228, 228);
+}
+
+.galleryView-slider--text{
+    font-family: "Roboto-Regular";
+    color: black;
+    text-shadow: 1px 1px #f3ffe3;
+    text-align: center;
+}
+
+.galleryView-slider--img{
+    width: 100%;
+}
+
+.slider-container--img{
+    width: 29%;
+    border-radius: 10px;
+    border: 15px solid rgba(57,204,204,0.8);
+}
+.galleryView-slider--img-1{
+    width:85%;
+}
+
+.galleryView-slider--img-2{
+    width:88%;
+}
+
+.galleryView-slider--img-3{
+    width:88%;
+}
+
+.galleryView-slider--img-4{
+    width:95%;
+}
+
 .galleryView--container--pictures{
     width: 30%!important;
 }
 
+            /* BUTTONS SLIDER */
+.chevrons{
+    width: 3.5%;
+    position: absolute;
+    top: 40%;
+    opacity: 0.6;
+    z-index: 1000000;
+}
+
+.chevrons:hover{
+    transition: ease 2s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#chevrons-left{
+    left: 0;
+    padding-left: 1%;
+}
+
+#chevrons-right{
+    right: 0;
+    padding-right: 1%;
+}
+
+#pauseBtn{
+    left: 3.5%;
+    width: 2.7%;
+    top: 39.5%;
+}
 
                 /*AUTHOR PAGE*/
 .banner-authorView{
