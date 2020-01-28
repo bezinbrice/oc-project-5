@@ -32,10 +32,11 @@
                                     <label for="mesSubject">Sujet</label>
                                     <select id="mesSubject" name="mesSubject" class="form-control" required="required">
                                         <option value="na" selected="">Choisir parmis la liste :</option>
-                                        <option value="Le livre 'Billet simple pour l'Alaska'">Le livre "Billet simple pour l'Alaska"</option>
+                                        <option value="Mon voyage">Mon voyage</option>
+                                        <option value="Mon parcours">Mon parcours</option>
+                                        <option value="Mes oeuvres">Mes oeuvres</option>
+                                        <option value="Sur moi">Sur moi</option>
                                         <option value="Le site web">Le site web</option>
-                                        <option value="L'auteur">L'auteur</option>
-                                        <option value="La maison d'édition">La maison d'édition</option>
                                         <option value="Divers">Divers</option>
                                     </select>
                                 </div>
@@ -55,15 +56,9 @@
             </div>
             <div class="col-md-4">
                 <form>
-                    <legend><span class="glyphicon glyphicon-globe"></span> Notre adresse</legend>
+                    <legend><span class="glyphicon glyphicon-globe"></span>Mes oeuvres</legend>
                     <address>
-                        <strong>Valerian's Books</strong><br>
-                        79 rue de la perche<br>
-                        Paris, 75002<br>
-                        <abbr title="Téléphone">T:</abbr>01 80 74 54 08
-                    </address>
-                    <address>
-                        <strong>Valerian's Books Email</strong><br>
+                        <strong>Le site *******</strong><br>
                         <a href="mailto:bezinbrice@gmail.com">valerians.book@contact.com</a>
                     </address>
                 </form>

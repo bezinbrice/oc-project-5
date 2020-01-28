@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=listPosts">Chapitres</a>
+                    <a class="nav-link" href="index.php?action=listPosts">Publications</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?action=gallery">Galerie</a>

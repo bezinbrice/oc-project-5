@@ -17,8 +17,8 @@
 
 .image-home-hero{
     padding-top: 1%!important;
-    margin-left: 25%!important;
-    width: 25%;
+    margin-left: 16%!important;
+    width: 45%;
 }
 
 .home-banner--titles{
@@ -111,7 +111,18 @@ a
     text-align: center;
 }
 
+.adminView-form--select-images--up{
+    width:35%!important;
+    margin-right: 3%;
+}
+
+.adminView-form--title{
+    margin-top:2%;
+    width:30%;
+}
+
 .adminView-form--select-images{
+    margin-left:46%!important;
     width:35%!important;
     margin-right: 3%;
 }
@@ -189,6 +200,10 @@ a
 .banner-listPostsView--blockquote{
     text-shadow: 1px 1px #d5d5d5;
 
+}
+
+.listPostsView--background{
+    background-image: url('../images/flower-background.jpg');
 }
 
 .listPostsView--img-chapter{
@@ -301,17 +316,26 @@ a
     width:95%;
 }
 
+.galleryView--container{
+    margin:auto;
+    background-image: url('../images/1877-william-morris-honeysuckle-tulip-wallpaper-print-a-green-b-lila-b.jpg');
+}
+
 .galleryView--container--pictures{
     width: 30%!important;
 }
 
+.galleryView--container--pictures--image{
+    padding-bottom: 10%!important;
+}
+
             /* BUTTONS SLIDER */
 .chevrons{
-    width: 3.5%;
+    width: 5%;
     position: absolute;
     top: 40%;
     opacity: 0.6;
-    z-index: 1000000;
+    z-index: 1000;
 }
 
 .chevrons:hover{

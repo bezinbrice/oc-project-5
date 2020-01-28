@@ -5,11 +5,6 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="my-4 banner-authorView--text">LE GRAPHISTE</h1>
-                <h2 class="my-4 banner-authorView--text">THIBAUT</h2>
-                <blockquote class="blockquote banner-listPostsView--text banner-listPostsView--blockquote">
-                    <p class="mb-0">C'est plus fort que moi, j'ai juste besoin d'écrire.</p>
-                    <footer class="blockquote-footer banner-listPostsView--text banner-listPostsView--blockquote">Extrait paru dans <cite title="Source Title">Le Monde</cite> édition 19 mars 2019</footer>
-                </blockquote>
             </div>
         </div>
     </div>

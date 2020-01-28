@@ -16,7 +16,10 @@
                             <textarea id="content" name="content" class="updatePostView--form--content"><?= nl2br(htmlspecialchars($postUpdate['content'])); ?></textarea>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="pictureName" name="pictureName" value="<?= htmlspecialchars($postUpdate['picture']); ?>"placeholder="Nom de l'image"/>
+                            <div class="custom-file d-flex justify-content-start">
+                                <input type="file" name="pictureName" class="custom-file-input adminView-form--select-images" id="customFileLang" lang="fr">
+                                <label class="custom-file-label adminView-form--select-images" for="customFileLang" data-browse="Explorer"><?= htmlspecialchars($postUpdate['picture']); ?></label>
+                            </div>
                         </div>
                         <div class="input-group updatePostView--form--btns">
                             <button type="submit" name="update" class="btn btn-warning updatePostView--form--btns--edit" onclick="return confirm('Êtes-vous sûr de vouloir modifier le chapitre?')">Éditer</button>

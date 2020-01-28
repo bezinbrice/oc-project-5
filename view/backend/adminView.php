@@ -16,14 +16,15 @@
                 <?php endif ?>
                 <div>
                     <form action="index.php?action=admin" method="post">
+                        <div class="custom-file d-flex justify-content-start">
+                            <input type="file" name="pictureName" class="custom-file-input adminView-form--select-images--up" id="customFileLang" lang="fr">
+                            <label class="custom-file-label adminView-form--select-images--up" for="customFileLang" data-browse="Explorer">Choisir une image</label>
+                        </div>
                         <div class="input-group">
-                            <input type="text" id="title" name="title" placeholder="Titre du chapitre"/>
+                            <input type="text" id="title" class="adminView-form--title" name="title" placeholder="Titre du chapitre"/>
                         </div>
                         <div class="input-group adminView--form--content updatePostView--form--content">
                             <textarea id="content" name="content"></textarea>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" id="pictureName" name="pictureName" placeholder="Nom de l'image"/>
                         </div>
                         <div class="d-flex justify-content-between adminView--btns">
                             <div class="adminView--publish-btn">
@@ -40,12 +41,12 @@
                     </form>
                 </div>
                 <div>
-                    <div >
+                    <div>
                         <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
-                            <div class="custom-file d-flex justify-content-start">
+                            <div class="custom-file d-flex justify-content-end">
                                 <input type="file" name="myfile[]" class="custom-file-input adminView-form--select-images" id="customFileLang" lang="fr" multiple="multiple">
-                                <label class="custom-file-label adminView-form--select-images" for="customFileLang" data-browse="Explorer">Choisir une image</label>
-                                <input type="submit" class="btn btn-dark" name="submit" value="Charger une image" >
+                                <label class="custom-file-label adminView-form--select-images" for="customFileLang" data-browse="Explorer">Charger de nouvelles images</label>
+                                <input type="submit" class="btn btn-info" name="submit" value="Charger des images" >
                             </div>
                         </form>
                     </div>
