@@ -21,7 +21,7 @@
                 Etiam maximus arcu eget tempus vulputate. Phasellus vel tempus quam, eget laoreet nisl. Aliquam erat volutpat. Sed eu auctor ipsum.
                 Nulla id finibus ligula, in iaculis lacus. Quisque porttitor augue lorem. Suspendisse dapibus accumsan tincidunt. In interdum vestibulum elit, ac lacinia lectus cursus auctor.
                 Nam finibus eros vitae ex consequat, ac aliquam purus finibus. Maecenas in felis diam. Donec non eleifend tellus, eget sagittis nisi.</p>
-            <img src="web/images/face-984031_1920.jpg" class="img-fluid rounded mx-auto d-block authorView--page--picture1" alt="Portrait de Jean Forteroche" />
+            <img src="web/images/croquis_stylo.jpg" class="img-fluid rounded mx-auto d-block authorView--page--picture1" alt="croquis manga avec stylo" />
             <p class="authorView--page--text">Etiam tristique ligula ex, ut viverra turpis laoreet sit amet. Suspendisse tellus odio, suscipit a accumsan nec, blandit eu nisl. Nunc in mattis tellus. Ut imperdiet arcu a aliquam interdum. Mauris nec ex tellus. Morbi porta lacus ac convallis pharetra. Donec eleifend eu dui ac vestibulum. Sed at nibh vel mi efficitur viverra.
                 Sed malesuada mauris nec iaculis dictum. Curabitur viverra enim nibh, sed tristique ipsum eleifend eu. Morbi enim sem, egestas id massa sed, commodo convallis lorem. Integer consectetur lacus vel nisl semper blandit. Duis vulputate ullamcorper libero ac placerat. Phasellus at vehicula quam. Integer libero quam, pellentesque in eros id, viverra rhoncus elit.
                 Nam placerat euismod pretium. </p>
@@ -35,7 +35,7 @@
                 Nullam ornare justo at porta fermentum. Integer venenatis rutrum neque, eget accumsan sem. Duis risus leo, interdum vestibulum dolor sed, vehicula fermentum ex. Nunc dapibus rutrum massa id auctor.
                 Mauris sagittis sit amet ipsum elementum eleifend. Maecenas semper magna nec nisi hendrerit, id rutrum enim cursus. Maecenas in viverra dolor. Donec venenatis magna eget consectetur pharetra.
                 Cras gravida eget elit sit amet vulputate. Fusce ex dui, porttitor vel libero at, efficitur dictum ipsum. Mauris sed enim ac lacus bibendum venenatis. Nam congue pellentesque accumsan.</p>
-            <img src="web/images/15236307.jpeg" class="img-fluid rounded mx-auto d-block authorView--page--picture2" alt="Garcin, homme sur route" />
+            <img src="web/images/Wolf double expo" class="img-fluid rounded mx-auto d-block authorView--page--picture2" alt="Wolf double expo" />
             <h1 class="display-4 authorView--page--title">Renouer avec la passion</h1>
             <p class="authorView--page--text">Etiam tristique ligula ex, ut viverra turpis laoreet sit amet. Suspendisse tellus odio, suscipit a accumsan nec, blandit eu nisl. Nunc in mattis tellus. Ut imperdiet arcu a aliquam interdum. Mauris nec ex tellus. Morbi porta lacus ac convallis pharetra. Donec eleifend eu dui ac vestibulum. Sed at nibh vel mi efficitur viverra.
                 Sed malesuada mauris nec iaculis dictum. Curabitur viverra enim nibh, sed tristique ipsum eleifend eu. Morbi enim sem, egestas id massa sed, commodo convallis lorem. Integer consectetur lacus vel nisl semper blandit. Duis vulputate ullamcorper libero ac placerat. Phasellus at vehicula quam. Integer libero quam, pellentesque in eros id, viverra rhoncus elit.

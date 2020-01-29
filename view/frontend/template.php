@@ -26,16 +26,16 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!--Facebook-->
-    <meta property="og:title" content="Billet simple pour l'Alaska"/>
+    <meta property="og:title" content="Graphiste au Japon"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://projet4.bezinbrice.fr/"/>
+    <meta property="og:url" content="https://projet5.bezinbrice.fr/"/>
     <meta property="og:image" content="web/images/Le-funambule-2002.jpg" />
-    <meta property="og:description" content="Le nouveau roman de Jean Forteroche à retrouver entièrement en ligne.">
+    <meta property="og:description" content="Un humble voyage d'une année au Japon raconté par mes soins.">
     <!--Twitter-->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://projet4.bezinbrice.fr/">
-    <meta property="twitter:title" content="Billet simple pour l'Alaska">
-    <meta property="twitter:description" content="Le nouveau roman de Jean Forteroche à retrouver entièrement en ligne." />
+    <meta property="twitter:url" content="https://projet5.bezinbrice.fr/">
+    <meta property="twitter:title" content="Gaphiste au Japon">
+    <meta property="twitter:description" content="Un humble voyage d'une année au Japon raconté par mes soins." />
     <meta property="twitter:image" content="web/images/Le-funambule-2002.jpg" />
 </head>
 <body>

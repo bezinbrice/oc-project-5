@@ -59,7 +59,7 @@
                     <legend><span class="glyphicon glyphicon-globe"></span>Mes oeuvres</legend>
                     <address>
                         <strong>Le site *******</strong><br>
-                        <a href="mailto:bezinbrice@gmail.com">valerians.book@contact.com</a>
+                        <a href="mailto:bezinbrice@gmail.com">bezinbrice@gmail.com</a>
                     </address>
                 </form>
             </div>

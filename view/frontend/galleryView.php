@@ -32,12 +32,12 @@
             <div class="col-md-12">
                 <h1 class="my-4 galleryView-slider--text">GALERIE D'IMAGES</h1>
                 <h2 class="my-4 galleryView-slider--text">VOYAGE AU JAPON</h2>
-                <div class="d-flex  justify-content-between flex-wrap">
+                <div class="d-flex justify-content-between flex-wrap">
                     <?php
                     while ($data = $pictures->fetch())
                     {
                         ?>
-                        <div class="galleryView--container--pictures">
+                        <div class="galleryView--container--pictures col-12 col-sm-6 col-md-4">
                             <a href="index.php?action=post&amp;id=<?= $data['id'] ?>"><img src="public/uploads/<?= $data['picture'];?>" class="card-img-top galleryView--container--pictures--image" alt="<?= $data['picture'];?>"></a>
                         </div>
                         <?php

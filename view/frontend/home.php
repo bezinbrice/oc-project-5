@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <h1 class="my-4 display-3 home-banner--titles title-white-shadow">GRAPHISTE AU JAPON</h1>
                 <h2 class="home-banner--titles home--h2 title-white-shadow">Récit d'un humble voyage</h2>
-                <img src="web/images/Annotation 2020-01-28 160953.png" class="img-fluid rounded mx-auto d-block image-home-hero" alt="stylo et dessin">
+                <img src="web/images/croquis-manga.png" class="img-fluid rounded mx-auto d-block image-home-hero" alt="stylo et dessin">
                 <blockquote class="blockquote">
                     <p class="mb-0">L'homme ne peut découvrir de nouveaux océans sans avoir le courage de perdre de vue le rivage</p>
                     <footer class="blockquote-footer">Citation d'<cite title="Source Title">André Gide</cite>, écrivain français </footer>
@@ -44,7 +44,7 @@
             $lastPost->closeCursor();
             ?>
             <div>
-                <img src="web/images/200115_0019.jpg" class="img-fluid rounded mx-auto d-block home--center--picture" alt="...">
+                <img src="web/images/porte-japon.jpg" class="img-fluid rounded mx-auto d-block home--center--picture" alt="...">
             </div>
             <div class="card home--pitch-card">
                 <h5 class="card-header text-uppercase">JE VAIS PARTIR UN AN AU JAPON</h5>

@@ -43,7 +43,7 @@
                 <div>
                     <div>
                         <form action="index.php?action=fileUpload" method="post" enctype="multipart/form-data">
-                            <div class="custom-file d-flex justify-content-end">
+                            <div class="custom-file d-flex flex-wrap flex-md-nowrap justify-content-end">
                                 <input type="file" name="myfile[]" class="custom-file-input adminView-form--select-images" id="customFileLang" lang="fr" multiple="multiple">
                                 <label class="custom-file-label adminView-form--select-images" for="customFileLang" data-browse="Explorer">Charger de nouvelles images</label>
                                 <input type="submit" class="btn btn-info" name="submit" value="Charger des images" >

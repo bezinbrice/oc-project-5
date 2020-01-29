@@ -8,7 +8,7 @@
 
 #background-home{
     width:100%;
-    background-image: url('../images/home_banner.png');
+    background-image: url('../images/home_banner_japan_view.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -77,7 +77,7 @@ a
 
                 /* ADMIN PAGE */
 .admin-hero{
-    background-image: url('../images/mt-fuji-477832_1920.jpg');
+    background-image: url('../images/mt-fuji.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2.5%;
@@ -318,7 +318,7 @@ a
 
 .galleryView--container{
     margin:auto;
-    background-image: url('../images/1877-william-morris-honeysuckle-tulip-wallpaper-print-a-green-b-lila-b.jpg');
+    background-image: url('../images/william-morris-honeysuckle-tulip.jpg');
 }
 
 .galleryView--container--pictures{
@@ -374,7 +374,11 @@ a
 }
 
 .authorView--page--picture1{
-    width:50%;
+    width:40%;
+}
+
+.authorView--page--picture2{
+    width:60%;
 }
 
 .authorView--page--text{
@@ -399,6 +403,12 @@ a
 }
 
                 /*RESPONSIVE*/
+@media screen and (max-width: 992px){
+    .adminView-form--select-images{
+        margin-left:20%!important;
+        width:50%!important;
+    }
+}
 @media screen and (max-width: 768px){
     .news
     {
@@ -412,6 +422,30 @@ a
 
     .authorView--page--picture1{
         width:80%;
+    }
+
+    .adminView-form--select-images{
+        margin-left:0!important;
+        width:65%!important;
+    }
+
+    .adminView-form--select-images--up{
+        margin-right:0!important;
+        width:60%!important;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .adminView-form--select-images--up{
+        width:80%!important;
+    }
+
+    .adminView-form--title{
+        width:80%!important;
+    }
+
+    .adminView-form--select-images{
+        width:100%!important;
     }
 }
 
